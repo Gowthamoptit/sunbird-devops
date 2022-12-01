@@ -126,16 +126,16 @@
     #headers:
       #Authorization: "Bearer {{ core_vault_sunbird_api_auth_token }}"
     #body: |-
-      {
-         "request": {
-            "channel":{
-                "frameworks": [{
-                  "identifier": "{{ default_framework }}",
-                  "name": "{{ default_framework }}"
-                }]
-            }
-          }
-      }
+      #{
+         #"request": {
+            #"channel":{
+                #"frameworks": [{
+                  #"identifier": "{{ default_framework }}",
+                  #"name": "{{ default_framework }}"
+                #}]
+            #}
+          #}
+      #}
 
 - name: check created framework
   block:
