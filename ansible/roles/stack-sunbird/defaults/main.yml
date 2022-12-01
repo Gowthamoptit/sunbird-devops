@@ -480,25 +480,6 @@ cert_liveness_readiness:
     timeoutSeconds: 5
     failureThreshold: 2
 
-certregistry_liveness_readiness:
-  healthcheck: true
-  readinessProbe:
-    httpGet:
-      path: /service/health
-      port: 9000
-    initialDelaySeconds: 15
-    periodSeconds: 15
-    timeoutSeconds: 5
-    failureThreshold: 2
-  livenessProbe:
-    httpGet:
-      path: /service/health
-      port: 9000
-    initialDelaySeconds: 15
-    periodSeconds: 15
-    timeoutSeconds: 5
-    failureThreshold: 2
-
 content_liveness_readiness:
   healthcheck: true
   readinessProbe:
