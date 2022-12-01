@@ -118,14 +118,14 @@
       {}
   delegate_to: "{{ learningservice_ip }}"
 
-- name: Assosiating framework with channel
-  uri:
-    url: "https://{{ domain_name }}/api/channel/v1/update/{{ sunbird_custodian_org_id }}"
-    method: PATCH
-    body_format: json
-    headers:
-      Authorization: "Bearer {{ core_vault_sunbird_api_auth_token }}"
-    body: |-
+#- name: Assosiating framework with channel
+  #uri:
+    #url: "https://{{ domain_name }}/api/channel/v1/update/{{ sunbird_custodian_org_id }}"
+    #method: PATCH
+    #body_format: json
+    #headers:
+      #Authorization: "Bearer {{ core_vault_sunbird_api_auth_token }}"
+    #body: |-
       {
          "request": {
             "channel":{
