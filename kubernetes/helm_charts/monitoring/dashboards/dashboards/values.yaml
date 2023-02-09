@@ -371,8 +371,8 @@ dashboards:
        file: dashboards/ep-pipeline-consumerLag.json
      dashboard12:
        file: dashboards/host-details.json
-     #dashboard13:
-       #file: dashboards/host-details-swarm1.json
+     dashboard13:
+       file: dashboards/host-details-swarm1.json
      dashboard14:
        file: dashboards/host-details-swarm2.json
      dashboard15:
